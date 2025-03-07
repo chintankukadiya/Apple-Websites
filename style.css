@@ -1,0 +1,228 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4; /* Subtle background color */
+    color: #333;
+    background-image: url('textures/light-marbled-texture.png'); /* Add a subtle light texture */
+    background-repeat: repeat;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1a1a1a; /* Deep dark background for a premium look */
+    border-bottom: 3px solid #bdbdbd; /* Subtle border for definition */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Soft shadow to elevate navbar */
+}
+
+.navbar-brand {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #000000 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #000000 !important;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f7c830 !important; /* Gold highlight on hover */
+    text-shadow: 0px 0px 5px rgba(247, 200, 48, 0.7); /* Glowing effect on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #000;
+    background-image: url('apple-hero.jpg'); /* High-quality image for premium look */
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8); /* Strong text shadow for readability */
+    border-bottom: 5px solid rgba(0, 0, 0, 0.3); /* Soft bottom border for separation */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.hero a.btn {
+    background-color: #f7c830;
+    border: none;
+    padding: 18px 35px;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Premium button shadow */
+    transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.hero a.btn:hover {
+    background-color: #e1a100;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow effect */
+}
+
+/* Product Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Soft, refined shadow for cards */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+    background-color: #fff;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    filter: grayscale(30%); /* Slight grayscale to emphasize product */
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1); /* Subtle zoom effect */
+    filter: grayscale(0%); /* Colorize the image on hover */
+}
+
+.card-body {
+    padding: 25px;
+    background: linear-gradient(135deg, #fff, #f7f7f7); /* Soft gradient background for elegance */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Inset shadow for texture */
+    border-radius: 0 0 15px 15px;
+}
+
+.card-title {
+    font-size: 1.7rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.card .btn {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card .btn:hover {
+    background-color: #f7c830;
+    color: #1a1a1a;
+    box-shadow: 0 5px 15px rgba(247, 200, 48, 0.2); /* Subtle glow effect on button hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 1.1rem;
+    border-top: 5px solid #f7c830; /* Premium gold border for footer */
+}
+
+footer a {
+    color: #f7c830;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e1a100;
+    text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1); /* Deep shadow for the form */
+    background: linear-gradient(135deg, #fff, #f9f9f9); /* Elegant gradient background */
+}
+
+form .form-label {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+form .form-control {
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow for texture */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form .form-control:focus {
+    border-color: #f7c830;
+    box-shadow: 0 0 8px rgba(247, 200, 48, 0.6); /* Gold glow on focus */
+}
+
+/* Button Hover Effects */
+.btn-primary {
+    background-color: #f7c830;
+    border: none;
+    padding: 18px 35px;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #e1a100;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow effect */
+}
+
+/* Miscellaneous Styles */
+section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.container h2 {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.bg-light {
+    background-color: #f9f9f9 !important;
+}
+
+.bg-dark {
+    background-color: #000 !important;
+}
+
+.bg-light p {
+    color: #000000;
+}
